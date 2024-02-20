@@ -1,16 +1,27 @@
 <script>
+import AppHeader from './components/AppHeader.vue'; 
+import AppMain from './components/AppMain.vue';
 
 
+export default {
+  components: [
+    AppHeader,
+    AppMain
+    ]
+}
 </script>
 
 <template>
+    <AppHeader />
+    <AppMain />
+
+    
   <h1>
-    CIAO
+    Ciaoooo
   </h1>
 </template>
 
 <style lang="scss">
-@use 'bootstrap/scss/bootstrap.scss' as *;
 @use './style/general.scss' as *;
 
 </style>
