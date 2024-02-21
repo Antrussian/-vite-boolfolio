@@ -2,26 +2,21 @@
 import AppHeader from './components/AppHeader.vue'; 
 import AppMain from './components/AppMain.vue';
 
-
 export default {
-  components: [
-    AppHeader,
-    AppMain
-    ]
+  components: {
+    AppHeader, // Shorthand for AppHeader: AppHeader
+    AppMain // Shorthand for AppMain: AppMain
+  }
 }
 </script>
 
 <template>
+  <div>
     <AppHeader />
     <AppMain />
-
-    
-  <h1>
-    Ciaoooo
-  </h1>
+  </div>
 </template>
 
 <style lang="scss">
 @use './style/general.scss' as *;
-
 </style>
