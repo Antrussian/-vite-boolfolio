@@ -13,7 +13,10 @@ export default {
 <template>
   <div>
     <AppHeader />
-    <AppMain />
+    <router-view>
+      <AppMain />
+    </router-view>
+ 
   </div>
 </template>
 
