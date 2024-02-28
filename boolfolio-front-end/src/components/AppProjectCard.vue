@@ -14,8 +14,7 @@
       </div>
       <!-- Pulsanti di azione -->
       <div class="project-actions">
-
-        <button class="btn btn-primary">Visualizza</button>
+        <router-link :to="{ name: 'project-detail', params: { id: project.id }}" class="btn">Visualizza</router-link>
      
       </div>
     </div>
